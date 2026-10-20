@@ -54,5 +54,6 @@ target_compile_definitions(eic_event_generator PRIVATE
 install(TARGETS eic_event_generator RUNTIME DESTINATION bin)
 target_link_libraries(eic_event_generator ROOT::Core ROOT::Graf ROOT::Gpad ROOT::Hist)
 target_compile_features(eic_event_generator PRIVATE cxx_std_17)
+target_include_directories(eic_event_generator PRIVATE external/Headers)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
